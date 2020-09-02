@@ -1,0 +1,198 @@
+<!doctype>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width= device - width,initial-scale=1.0">
+
+        <style>
+            .container{
+                padding: 1px;
+                background-color:lightblue;
+                border: 1px solid black;
+                height : 70px;
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 0;
+            }
+            .item{
+                background-color: whitesmoke;
+                 flex-shrink: 0;
+/*                color : white;*/
+                  border: 1px solid black;
+/*            flex-grow: ;*/
+            }
+            .item:nth-child(1){
+                flex-basis : 200px;
+/*                flex-grow : 1;*/
+                flex-shrink: 0;
+            }
+            .item:nth-child(2){
+/*                flex-basis : 300px;*/
+                flex-grow : 1;
+/*                flex-shrink: 2;*/
+            }
+            
+            #tag{
+
+                background-color: aquamarine;
+                height: 750;
+                border : 1px solid white ; 
+                display : flex;   
+            }
+            #title{
+                    
+                height: 100px;
+                text-align : center;
+            }
+            #sub{
+/*                border: 1px solid black;*/
+                 height:20px;
+            }
+            #sub>.container1{
+                
+                height: 120px;
+/*                color : black;*/
+                display: flex;                
+                flex-direction: row;
+                flex-shrink: 0;
+            }
+            
+            .container1>.item:nth-child(1) {
+                position: relative;
+                text-emphasis-position: below;
+                text-align: left;
+               
+                padding: 1px;
+            }
+            .container3{
+                background-color: aquamarine;
+                height: 117px;
+                border : 1px solid white ; 
+                display : flex;  
+                flex-direction:row;
+                text-align: justify;
+                
+            }
+            .container3>item{
+                background-color: cornsilk;
+                border: 1px solid black;
+                flex-grow:1;
+                flex-shrink: 0;
+            }
+            
+            .container3>item:nth-child(4){
+                flex-grow:2;
+                flex-direction: row;
+               
+            }
+            .class1{
+                display: flex;
+                flex-direction: row;
+                
+            }
+            
+            #list{
+                border: 1px solid blue;
+                margin: 5px;
+            }
+            
+        </style>
+    </head>
+    
+    
+    <body>
+        <div class="container">
+            
+            <div id="title" > <h1 style="font-size: 25px"><a href="My_index.html"> 링크 저장소</a></h1><br> </div>
+              <div id="tag">
+                    <div class="item">태그모음<br>
+                            
+                            <div id="game" style="padding:10px;">게임<br>
+                                     <table id="game_tag">
+                                            <tr>1. <a href="My_stcraft.html"> 스타크래프트 </a> <br></tr> 
+                                            <tr>2. <a href="My_lol.html"> 리그 오브 레전드</a><br></tr> 
+                                            <tr>3. <a href="My_wc.html"> 원랜디<br></a></tr> 
+                                       
+                                    </table>
+                            </div>
+                            <div style="padding:10px;" id="webtoon">웹툰 <br>
+                                     <table>    
+                                        
+                                        <tr>1. 나다싶<br></tr> 
+                                        <tr>2. 너다싶<br></tr> 
+                                        <tr>3. 니다싶<br></tr>  
+                              
+                                    </table>                     
+                            </div>            
+                            
+                            <div id="birthday" style="padding :10px;">생일<br>
+                                    (미구현)             
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="item"> 본문
+                       
+                    </div>
+              </div>
+              
+              <div class="item">
+                       
+                 <div id="sub">고객센터 : 010 - 4488- xxxx 박성준 , 운영시간 : xx-xx ~ xx-xx 까지 아침, 점심, 저녁 식사 때 전화 안 받음
+                        <div class="container1">
+                            <div class="item">
+                            
+                                <form action="우기4.jpg">
+                                    <table>
+                                        <tr>
+                                            <p>ID  
+                                            <input type="text" name="id" size= 10px value="id">
+                                        </p></tr>
+                                        <tr>
+                                            <p>pwd <input type="password" size=8px value="pwd"> 
+<!--                                            <input type="submit">-->
+                     
+                                            <input type="button" value="Enter" onclick = "alert('응 돌아가')">                      
+                                             </p>
+                                        </tr>
+                                    
+                                    
+                                    </table>
+                                    
+                                </form>
+                            </div>
+                            
+                            <div class="item">
+                                        <div class="container3">
+                                            <item><form action=""> 김윤환방송</form>
+                                                 <a target="_blank" href="http://play.afreecatv.com/brainzerg7">아프리카tv</a>   
+                                                 <a target="_blank" href="https://www.youtube.com/channel/UCDERWIJpGM2kQas8vDNblzw">암튜브</a> 
+                                                 
+                                            </item>
+                                            <item><form action=""> 점중이방송</form>
+                                                <a target="_blank" href="http://play.afreecatv.com/jk890202/226501444">아프리카tv</a>    
+                                                <a target="_blank" href="https://www.youtube.com/channel/UClwPAvpHY8tVyHA90YNdfQw">점튜브</a> 
+                                                
+                                            </item>
+                                            <item><form action="">LCK방송</form>
+                                                     <a target="_blank" href="https://www.youtube.com/channel/UCw1DsweY9b2AKGjV4kGJP1A">유튜브</a> 
+                                                     <a target="_blank" href="http://bj.afreecatv.com/AFLOL">아프리카</a>
+                                                  
+                                            </item>
+                                            <item>
+                                            
+                                            
+                                            
+                                            </item>
+                                                                                
+                                        </div>
+                                        
+                            </div>
+
+                        </div>
+                 </div>
+              </div>
+              
+        </div>      
+    </body>
+</html>
